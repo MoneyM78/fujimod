@@ -1,0 +1,29 @@
+{
+  "$schema": "https://fujimod.com/schemas/body.schema.json",
+  "schema": 1,
+  "id": "xe3",
+  "soc_id": "xpp",
+  "dram_bytes": 1073741824,
+  "nand": null,
+  "sensor": null,
+  "lens": null,
+  "display": null,
+  "microcontroller": null,
+  "power_control": null,
+  "card_slot": null,
+  "control_bus_chips": [],
+  "connections": [],
+  "parts": [],
+  "wiring": [],
+  "hardware": {
+    "serial_attachments": [],
+    "gpio_feedback": [],
+    "keypad_samples": {},
+    "thermal_connection_ids": [],
+    "profiles": {
+      "xe3-discovery": {
+        "dram_basis": "Declared discovery input from firmware, not measured: X-E3 1.32 copy B (stream-035426a8) 0xd03ad8 sets the attribute of 0x1417000-0x3fffffff to 3, the same value 0xd03aa8 gives the read-write range 0xff2000-0x1417000 below the application stream base, so the firmware uses RAM up to 1 GiB. Addresses are from research/xpp-boot-memory-setup.md; copy A (stream-00230268) has different code in this range and must not be used to check them. RAM population and the camera MMU table are not read."
+      }
+    }
+  }
+}

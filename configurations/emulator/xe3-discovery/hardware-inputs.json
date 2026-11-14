@@ -1,0 +1,20 @@
+{
+  "$schema": "https://fujimod.com/schemas/emulator-hardware-inputs.generated.schema.json",
+  "schema": 1,
+  "id": "xe3-discovery",
+  "body_id": "xe3",
+  "reset": {
+    "kernel_unit": "kernel",
+    "loader_handoff": {
+      "address": 9437184,
+      "size": 1472,
+      "fill": 0,
+      "words": [],
+      "basis": "Declared discovery input: an all-zero loader handoff in a free RAM gap, not a capture. The registered map of X-E3 1.32 copy B (stream-035426a8) is a single section at 0xb51000-0xff16ec and the application stream begins at 0x1417000, so nothing in the registered map occupies 0x900000-0x9005c0. The 0x5c0 extent is the shared X-Processor Pro handoff size declared by xt2-discovery and gfx50r-discovery; this body's own kernel copy of it has not been located, so the extent is assumed from the generation rather than read. Kernel entry bypasses the boot ROM. Copy A (stream-00230268) differs in content from copy B and is not the copy that runs on the camera."
+    },
+    "flash_aperture": {
+      "contents": "registered-update",
+      "basis": "Declared discovery input: the update image from its flash offset; bytes past it read erased. No flash capture exists."
+    }
+  }
+}
